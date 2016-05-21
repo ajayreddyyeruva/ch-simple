@@ -77,7 +77,8 @@
                         <releaseProfiles>release</releaseProfiles>
                     </configuration>
                 </plugin>
-         </build>
+         </pluginManagement>
+</build>
          
 </pluginRepositories>
 </build>
