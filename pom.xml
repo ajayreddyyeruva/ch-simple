@@ -47,6 +47,7 @@
 <snapshots>
 <enabled>true</enabled>
 </snapshots>
+</pluginRepositories>
 <build>
 <pluginManagement>
             <plugins>
@@ -79,8 +80,6 @@
                 </plugin>
          </pluginManagement>
 </build>
-         
-</pluginRepositories>
-</build>
+
 </project>
 
