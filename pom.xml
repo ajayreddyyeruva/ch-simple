@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.sonatype.mavenbook.simple</groupId>
   <artifactId>parent</artifactId>
-  <version>0.13-SNAPSHOT</version>
+  <version>0.12-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Simple Project Chapter Parent Project</name>
   <url>http://sonatype.com/book</url>
@@ -17,7 +17,7 @@
 <distributionManagement>
   <repository>
     <id>releases</id>
-    <url>http://192.168.50.1:8080/nexus-webapp-2.10.0-02/content/repositories/releases</url>
+    <url>http://192.168.50.1:8080/nexus-webapps-2.10.0-02/content/repositories/releases</url>
   </repository>
   <snapshotRepository>
     <id>snapshots</id>
@@ -27,7 +27,7 @@
 <repositories>
     <repository>
         <id>releases</id>
-        <url>http://192.168.50.1:8080/nexus-webapp-2.10.0-02/content/groups/public/</url>
+        <url>http://192.168.50.1:8080/nexus-webapps-2.10.0-02/content/groups/public</url>
         <releases>
 <enabled>true</enabled>
 </releases>
@@ -40,46 +40,13 @@
 <pluginRepositories>
 <pluginRepository>
 <id>releases</id>
-        <url>http://192.168.50.1:8080/nexus-2.13.0-01/content/groups/public</url>
+        <url>http://192.168.50.1:8080/nexus-webapps-2.10.0-02/content/groups/public</url>
         <releases>
 <enabled>true</enabled>
 </releases>
 <snapshots>
 <enabled>true</enabled>
 </snapshots>
+</pluginRepository>
 </pluginRepositories>
-<build>
-<pluginManagement>
-            <plugins>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.1</version>
-                    <configuration>
-                        <source>1.7</source>
-                        <target>1.7</target>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>2.3</version>
-                    <configuration>
-                        <failOnMissingWebXml>false</failOnMissingWebXml>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
-                    <configuration>
-                        <tagNameFormat>v@{project.version}</tagNameFormat>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <!-- do not release profile from Maven super pom -->
-                        <useReleaseProfile>false</useReleaseProfile>
-                        <!--  instead use our own one called release, see below -->
-                        <releaseProfiles>release</releaseProfiles>
-                    </configuration>
-                </plugin>
-         </pluginManagement>
-</build>
-
 </project>
-
