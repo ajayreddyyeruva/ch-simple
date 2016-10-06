@@ -4,7 +4,7 @@
 <artifactId>parent</artifactId>
 <version>0.1-SNAPSHOT</version>
 <packaging>pom</packaging>
-<name>Simple Project Chapter Parent Project</name>
+<name>Simple Parent Project</name>
 <url>http://sonatype.com/book</url>
 <modules>
 <module>simple</module>
