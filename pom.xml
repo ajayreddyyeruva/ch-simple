@@ -16,13 +16,13 @@
 <repository>
 <id>releases</id>
 <url>
-http://192.168.1.9:9090/nexus-webapp-2.10.0-02/content/repositories/releases
+http://localhost:9090/nexus-webapp-2.10.0-02/content/repositories/releases
 </url>
 </repository>
 <snapshotRepository>
 <id>snapshots</id>
 <url>
-http://192.168.1.9:9090/nexus-webapp-2.10.0-02/content/repositories/snapshots
+http://localhost:9090/nexus-webapp-2.10.0-02/content/repositories/snapshots
 </url>
 </snapshotRepository>
 </distributionManagement>
@@ -30,7 +30,7 @@ http://192.168.1.9:9090/nexus-webapp-2.10.0-02/content/repositories/snapshots
 <repository>
 <id>releases</id>
 <url>
-http://192.168.1.9:9090/nexus-webapp-2.10.0-02/content/groups/public
+http://localhost:9090/nexus-webapp-2.10.0-02/content/groups/public
 </url>
 <releases>
 <enabled>true</enabled>
@@ -44,7 +44,7 @@ http://192.168.1.9:9090/nexus-webapp-2.10.0-02/content/groups/public
 <pluginRepository>
 <id>releases</id>
 <url>
-http://192.168.1.9:9090/nexus-webapp-2.10.0-02/content/groups/public
+http://localhost:9090/nexus-webapp-2.10.0-02/content/groups/public
 </url>
 <releases>
 <enabled>true</enabled>
